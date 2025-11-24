@@ -150,29 +150,29 @@ ul {
 
 
 /* about me part of css */
-#aboutme {
+#main_part {
     width: 66%;
     padding: 3rem;
     background-color: #ffffff;
 }
 
-#aboutme h2 {
+#main_part h2 {
     margin-bottom: 1rem;
     color: rgb(23, 171, 179);
     font-weight: 600;
 }
 
 #profil_text {
-    font-size: 1rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
     color: #000000;
     text-indent: 2rem;
     text-align: justify;
+    margin-bottom: 3rem;
 }
 
-#profil_text p {
+
+#profil_text span {
     display: block;
     text-indent: 2rem;
-    text-align: justify;
 }
