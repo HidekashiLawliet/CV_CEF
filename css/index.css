@@ -208,5 +208,30 @@ footer {
     align-items: center;
     padding: 1rem;
     background-color: #17abb3;
-    color: #fff;
+    color: #ffffff;
+    margin-right: 1rem;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+}
+
+#icons {
+    margin: auto;
+}
+
+#icons img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+/* custom hover effect*/
+
+li:hover {
+    background-color: #e3e3e3;
 }
