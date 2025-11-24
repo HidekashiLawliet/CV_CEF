@@ -209,7 +209,7 @@ footer {
     padding: 1rem;
     background-color: #17abb3;
     color: #ffffff;
-    margin-right: 1rem;
+
 }
 
 footer nav {
@@ -232,6 +232,28 @@ footer nav {
 
 /* custom hover effect*/
 
-li:hover {
+#main_part li:hover {
     background-color: #e3e3e3;
+}
+
+#main_part li::before {
+    content: "";
+    position: absolute;
+    line-height: 3rem;
+    width: 3px;
+    background: #17abb3;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+/* show the line on hover */
+#main_part li:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#main_part li:hover .left {
+    transform: translateX(1rem);
+    transition: transform 200ms ease;
 }
