@@ -7,7 +7,7 @@
     <meta name="description" content="My curiculum vitae created for CEF, for the final exam of the junio dev courses.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/index.css">
-    <meta robots="index, follow">
+    <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="./ressources/cv.png">
     <title>CV CEF Loddo Quentin</title>
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
@@ -16,9 +16,11 @@
 <body>
     <header>
         <div id="profil_pic_section">
-            <picture>
-                <img src="./ressources/PXL_20240418_1756178714.jpg" id="pfp" alt="Loddo Quentin">
-            </picture>
+            <a href="./ressources/PXL_20240418_1756178714.jpg" target="_blank">
+                <picture>
+                    <img src="./ressources/PXL_20240418_1756178714.jpg" id="pfp" alt="Loddo Quentin profile picture">
+                </picture>
+            </a>
         </div>
         <div id="header_right">
             <h1>QUENTIN LODDO </h1>
@@ -214,16 +216,17 @@
                     </li>
                 </ul>
             </section>
+        </div>
     </main>
     <footer>
         <nav>
             <div id="icons">
-                <a href="https://www.linkedin.com/" target="_blank"><img id="linkedin" src="./ressources/linkedin.png"
-                        alt="linkedin logo"></a>
-                <a href="https://github.com/HidekashiLawliet" target="_blank"><img id="github"
+                <a href="https://www.linkedin.com/" target="_blank"><img class="social_network"
+                        src="./ressources/linkedin.png" alt="linkedin logo"></a>
+                <a href="https://github.com/HidekashiLawliet" target="_blank"><img class="social_network"
                         src="./ressources/github.png" alt="github logo"></a>
-                <a href="https://www.instagram.com/kant.1__/" target="_blank" alt="instagram logo"> <img id="instagram"
-                        src="./ressources/instagram.png"></a>
+                <a href="https://www.instagram.com/kant.1__/" target="_blank"> <img class="social_network"
+                        src="./ressources/instagram.png" alt="instagram logo"></a>
             </div>
             <span>Mis à jour le: 24/11/2025</span>
         </nav>
