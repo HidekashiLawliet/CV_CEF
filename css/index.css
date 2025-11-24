@@ -14,29 +14,30 @@ body {
 }
 
 header {
-    padding: 1rem;
     height: fit-content;
     color: #fff;
     background-color: rgb(23, 171, 179);
     display: flex;
-    padding-bottom: 3rem;
+    padding: 1rem;
     margin-bottom: 0;
 }
 
+header p {
+    font-size: 20px;
+}
 
 #profil_pic_section {
     display: flex;
     align-items: center;
     margin-left: 5rem;
-    align-items: flex-end;
+    align-items: center;
 }
 
 #header_right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: auto;
-    margin-right: 15rem;
+    margin: auto;
 }
 
 h1 {
@@ -48,6 +49,7 @@ h1 {
     height: 140px;
     border-radius: 50%;
     border-style: solid;
+    align-self: start;
     border-width: 5px;
     border-color: rgb(255, 255, 255);
 }
