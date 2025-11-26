@@ -1,0 +1,286 @@
+/* importing fonts both Lato and Raleway fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/** Global css **/
+html {
+    height: 100%;
+    width: 100%;
+    min-width: 370px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    background-color: #f5f5f5;
+}
+
+html h1,
+html h2 {
+    font-family: Lato, sans-serif;
+}
+
+body {
+    margin: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1160px;
+}
+
+/** Header part**/
+header {
+    height: fit-content;
+    color: #fff;
+    background-color: rgb(23, 171, 179);
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+#profil_pic_section {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    align-items: center;
+}
+
+#header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+#pfp {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border-style: solid;
+    align-self: start;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+#link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.small_icon {
+    width: 20px;
+}
+
+#link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 15px 25px 0 0;
+}
+
+/** Main part **/
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/** Skills list **/
+#skills {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 1rem;
+    background-color: #e3e3e3;
+    color: #000000;
+}
+
+#skill_listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+}
+
+#skill_listing h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(23, 171, 179);
+    font-weight: 600;
+}
+
+.fa-star {
+    font-size: 0.9rem;
+}
+
+li {
+    height: 1.7rem;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+    border-style: none;
+    background-color: #333333;
+}
+
+
+/** List on the left part **/
+#part_one li {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.description {
+    font-weight: 700;
+}
+
+ul {
+    padding: 0;
+}
+
+.clicked {
+    color: rgb(23, 171, 179);
+}
+
+.rating {
+    font-weight: 400;
+}
+
+#part_two li {
+    list-style: square;
+    margin-left: 1.5rem;
+}
+
+#part_two li::marker {
+    font-size: 25px;
+    color: rgb(23, 171, 179);
+}
+
+
+/** About me **/
+#main_part {
+    width: 66%;
+    padding: 3rem;
+    background-color: #ffffff;
+}
+
+#main_part h2 {
+    margin-bottom: 1rem;
+    color: rgb(23, 171, 179);
+    font-weight: 600;
+}
+
+#profil_text {
+    line-height: 1.5;
+    color: #000000;
+    text-indent: 2rem;
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+#profil_text span {
+    display: block;
+    text-indent: 2rem;
+}
+
+/** List in the main part **/
+#formation li,
+#stages li,
+#xp_pro li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.lieu {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+}
+
+.dates {
+    color: #17abb3;
+    white-space: nowrap;
+}
+
+/** handling the footer **/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #17abb3;
+    color: #ffffff;
+
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+}
+
+#icons {
+    margin: auto;
+}
+
+#icons img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+/** custom hover effect for the list items **/
+#main_part li:hover {
+    background-color: #e3e3e3;
+}
+
+#main_part li::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #17abb3;
+    transform: scaleY(0);
+}
+
+#main_part li:hover::before {
+    opacity: 1;
+    height: 4.1rem;
+    transform: scaleY(1);
+}
+
+/** move text to the left **/
+#main_part li:hover .left {
+    transform: translateX(1rem);
+    transition: transform 200ms ease;
+}
+
+/** custom cursor when over the profile picture **/
+#pfp:hover {
+    cursor: zoom-in;
+}
+
+/** change opacity of social network icons when hovering **/
+.social_network:hover {
+    opacity: 0.7;
+    transition: opacity 200ms ease;
+}
