@@ -1,7 +1,7 @@
 /* importing fonts both Lato and Raleway fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/** Global css **/
 html {
     height: 100%;
     width: 100%;
@@ -23,6 +23,7 @@ body {
     width: 1160px;
 }
 
+/** Header part**/
 header {
     height: fit-content;
     color: #fff;
@@ -74,11 +75,6 @@ h1 {
     width: 20px;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-}
-
 #link a {
     text-decoration: none;
     color: white;
@@ -86,6 +82,13 @@ main {
     margin: 15px 25px 0 0;
 }
 
+/** Main part **/
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/** Skills list **/
 #skills {
     display: flex;
     flex-direction: column;
@@ -120,9 +123,11 @@ li {
 hr {
     width: 100%;
     height: 1px;
+    opacity: 0.5;
     border-style: none;
-    background-color: #e3e3e3;
+    background-color: #333333;
 }
+
 
 /** List on the left part **/
 #part_one li {
@@ -158,6 +163,7 @@ ul {
     font-size: 25px;
     color: rgb(23, 171, 179);
 }
+
 
 /** About me **/
 #main_part {
